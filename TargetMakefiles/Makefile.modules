@@ -1,0 +1,6 @@
+#######LIBRARIES#######
+OPENCV_LIB						= Deps/incl/opencv/
+
+######MODULES#######
+
+VPS_MODULE 						= Src/Modules/vps/

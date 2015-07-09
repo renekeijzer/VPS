@@ -1,0 +1,4 @@
+
+#####MODULES#####
+MODULES += $(OPENCV_LIB)
+MODULES += $(VPS_MODULE)

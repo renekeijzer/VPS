@@ -1,0 +1,16 @@
+Src/Modules/vps/vps.o:vps.cpp:(.text+0x65): undefined reference to `cvCreateCameraCapture'
+Src/Modules/vps/vps.o:vps.cpp:(.text+0xae): undefined reference to `cvNamedWindow'
+Src/Modules/vps/vps.o:vps.cpp:(.text+0xef): undefined reference to `cvQueryFrame'
+Src/Modules/vps/vps.o:vps.cpp:(.text+0x10d): undefined reference to `cv::Mat::Mat(_IplImage const*, bool)'
+Src/Modules/vps/vps.o:vps.cpp:(.text+0x154): undefined reference to `cv::waitKey(int)'
+Src/Modules/vps/vps.o:vps.cpp:(.text+0x176): undefined reference to `cv::_OutputArray::_OutputArray(cv::Mat&)'
+Src/Modules/vps/vps.o:vps.cpp:(.text+0x18c): undefined reference to `cv::Mat::copyTo(cv::_OutputArray const&) const'
+Src/Modules/vps/vps.o:vps.cpp:(.text+0x1a4): undefined reference to `cv::_OutputArray::_OutputArray(cv::Mat&)'
+Src/Modules/vps/vps.o:vps.cpp:(.text+0x1ba): undefined reference to `cv::_InputArray::_InputArray(cv::Mat const&)'
+Src/Modules/vps/vps.o:vps.cpp:(.text+0x1d7): undefined reference to `cv::flip(cv::_InputArray const&, cv::_OutputArray const&, int)'
+Src/Modules/vps/vps.o:vps.cpp:(.text+0x1e3): undefined reference to `cv::waitKey(int)'
+Src/Modules/vps/vps.o:vps.cpp:(.text+0x1fa): undefined reference to `cvReleaseCapture'
+Src/Modules/vps/vps.o:vps.cpp:(.text+0x20b): undefined reference to `cvDestroyWindow'
+d:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../mingw32/bin/ld.exe: Src/Modules/vps/vps.o: bad reloc address 0x1b in section `.text$_ZN2cv3MatC1Ev[__ZN2cv3MatC1Ev]'
+collect2.exe: error: ld returned 1 exit status
+make: *** [vps] Error 1

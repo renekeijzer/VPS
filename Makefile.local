@@ -1,0 +1,10 @@
+ifeq ($(OS),Windows_NT)
+	#QT_LIB_DIR 						= 
+	#QT_INCL_DIR 					= 
+	#QT_BIN_DIR 						= 
+	
+	#BOOST_LIB_DIR 					= 
+	#BOOST_INCL_DIR 					= 
+else
+	#Not needed on linux based systems
+endif
