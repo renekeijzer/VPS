@@ -13,8 +13,6 @@ MODULES 						=
 
 ifeq ($(OS),Windows_NT)
 	CXXFLAGS 	+= -DWIN32 -fPIC
-	MOC			= $(QT_BIN_DIR)/moc.exe
-	UIC			= $(QT_BIN_DIR)/uic.exe
 endif
 
 ifeq ($(MAKECMDGOALS),vps)
