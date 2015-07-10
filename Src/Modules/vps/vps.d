@@ -1,17 +1,29 @@
 Src/Modules/vps/vps.d: Src/Modules/vps/vps.cpp \
- Deps/incl/opencv/opencv.hpp Deps/incl/opencv/core/core_c.h \
- Deps/incl/opencv/core/../core/types_c.h Deps/incl/opencv/core/core.hpp \
- Deps/incl/opencv/core/../core/version.hpp \
- Deps/incl/opencv/core/../core/operations.hpp \
- Deps/incl/opencv/core/../core/mat.hpp \
- Deps/incl/opencv/imgproc/imgproc_c.h \
- Deps/incl/opencv/imgproc/../core/core_c.h \
- Deps/incl/opencv/imgproc/../imgproc/types_c.h \
- Deps/incl/opencv/imgproc/../imgproc/../core/core_c.h \
- Deps/incl/opencv/imgproc/imgproc.hpp \
- Deps/incl/opencv/imgproc/../core/core.hpp \
- Deps/incl/opencv/highgui/highgui_c.h \
- Deps/incl/opencv/highgui/../core/core_c.h \
- Deps/incl/opencv/highgui/highgui.hpp \
- Deps/incl/opencv/highgui/../core/core.hpp \
- Deps/incl/opencv/highgui/../highgui/highgui_c.h
+ Deps/incl/opencv2/opencv2/opencv.hpp \
+ Deps/incl/opencv2/opencv2/core/core_c.h \
+ Deps/incl/opencv2/opencv2/core/types_c.h \
+ Deps/incl/opencv2/opencv2/core/core.hpp \
+ Deps/incl/opencv2/opencv2/core/version.hpp \
+ Deps/incl/opencv2/opencv2/core/operations.hpp \
+ Deps/incl/opencv2/opencv2/core/mat.hpp \
+ Deps/incl/opencv2/opencv2/flann/miniflann.hpp \
+ Deps/incl/opencv2/opencv2/flann/defines.h \
+ Deps/incl/opencv2/opencv2/flann/config.h \
+ Deps/incl/opencv2/opencv2/imgproc/imgproc_c.h \
+ Deps/incl/opencv2/opencv2/imgproc/types_c.h \
+ Deps/incl/opencv2/opencv2/imgproc/imgproc.hpp \
+ Deps/incl/opencv2/opencv2/photo/photo.hpp \
+ Deps/incl/opencv2/opencv2/photo/photo_c.h \
+ Deps/incl/opencv2/opencv2/video/video.hpp \
+ Deps/incl/opencv2/opencv2/video/tracking.hpp \
+ Deps/incl/opencv2/opencv2/video/background_segm.hpp \
+ Deps/incl/opencv2/opencv2/features2d/features2d.hpp \
+ Deps/incl/opencv2/opencv2/objdetect/objdetect.hpp \
+ Deps/incl/opencv2/opencv2/calib3d/calib3d.hpp \
+ Deps/incl/opencv2/opencv2/core/affine.hpp \
+ Deps/incl/opencv2/opencv2/ml/ml.hpp \
+ Deps/incl/opencv2/opencv2/highgui/highgui_c.h \
+ Deps/incl/opencv2/opencv2/highgui/highgui.hpp \
+ Deps/incl/opencv2/opencv2/contrib/contrib.hpp \
+ Deps/incl/opencv2/opencv2/contrib/retina.hpp \
+ Deps/incl/opencv2/opencv2/contrib/openfabmap.hpp

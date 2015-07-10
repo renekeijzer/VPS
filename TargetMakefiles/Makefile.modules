@@ -1,5 +1,5 @@
 #######LIBRARIES#######
-OPENCV_LIB						= Deps/incl/opencv/
+OPENCV_LIB						= Deps/incl/opencv2/
 
 ######MODULES#######
 

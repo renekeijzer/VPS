@@ -1,4 +1,6 @@
-#include "opencv.hpp"
+#include "opencv2/opencv.hpp"
+#include "opencv2/highgui/highgui.hpp"
+
 #include <iostream>
 #include <stdio.h>
 
@@ -8,36 +10,24 @@ using namespace cv;
 
 int main( int argc, const char** argv )
 {
-    CvCapture* capture = 0;
-    Mat frame, frameCopy, image;
+    VideoCapture cap(0); // open the default camera
+    if(!cap.isOpened())  // check if we succeeded
+        return -1;
 
-    capture = cvCaptureFromCAM( 0 ); //0=default, -1=any camera, 1..99=your camera
-    if(!capture) cout << "No camera detected" << endl;
-
-    cvNamedWindow( "result", 1 );
-
-    if( capture )
+    Mat edges;
+    namedWindow("edges",1);
+    for(;;)
     {
-        cout << "In capture ..." << endl;
-        for(;;)
-        {
-            IplImage* iplImg = cvQueryFrame( capture );
-            frame = iplImg;
-            if( frame.empty() )
-                break;
-            if( iplImg->origin == IPL_ORIGIN_TL )
-                frame.copyTo( frameCopy );
-            else
-                flip( frame, frameCopy, 0 );
-
-            if( waitKey( 10 ) >= 0 )
-                cvReleaseCapture( &capture );
+        Mat frame;
+        cap >> frame; // get a new frame from camera
+        if (!frame.empty()) {
+          cvtColor(frame, edges, CV_BGR2GRAY);
+          GaussianBlur(edges, edges, Size(7,7), 1.5, 1.5);
+          Canny(edges, edges, 0, 30, 3);
+          imshow("edges", edges);
         }
-
-        waitKey(0);
-
-    cvDestroyWindow("result");
-
-    return 0;
+        if(waitKey(30) >= 0) break;
     }
+    // the camera will be deinitialized automatically in VideoCapture destructor
+    return 0;
 }

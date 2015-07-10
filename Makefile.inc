@@ -19,9 +19,10 @@ endif
 
 ifeq ($(MAKECMDGOALS),vps)
 	ifeq ($(OS),Windows_NT)
-		INCLUDES 	+= -IDeps/incl/opencv
-		LDLIBS 		+= -LDeps/lib/opencv/Windows/lib
-		CXXFLAGS	+= -lopencv_ts300 -lopencv_world300
+		INCLUDES 	+=
+		LDFLAGS		+= -LDeps/lib/opencv/Windows/lib
+		LDLIBS 		+= -lopencv_highgui2411 -lopencv_imgproc2411 -lopencv_legacy2411 -lopencv_ml2411 -lopencv_nonfree2411 -lopencv_objdetect2411 -lopencv_ocl2411 -lopencv_photo2411 -lopencv_stitching2411 -lopencv_superres2411 -lopencv_ts2411 -lopencv_video2411 -lopencv_videostab2411 -lopencv_calib3d2411 -lopencv_contrib2411 -lopencv_core2411 -lopencv_features2d2411 -lopencv_flann2411 -lopencv_gpu2411
+		CXXFLAGS	+= 
 	else
 		INCLUDES 	+= -IDeps/incl/opencv
 		LDFLAGS		+= -LDeps/lib/opencv/Linux/x86
