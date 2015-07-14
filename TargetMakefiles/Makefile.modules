@@ -4,3 +4,5 @@ OPENCV_LIB						= Deps/incl/opencv/
 ######MODULES#######
 
 VPS_MODULE 						= Src/Modules/vps/
+VPS_CONTROLLER_MODULE			= Src/controllers/
+VPS_LOCALISATION_MODULE			= Src/Modules/Localisation/

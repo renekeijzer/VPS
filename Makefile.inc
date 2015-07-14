@@ -17,7 +17,7 @@ endif
 
 ifeq ($(MAKECMDGOALS),vps)
 	ifeq ($(OS),Windows_NT)
-		INCLUDES 	+= -IDeps/Include/opencv
+		INCLUDES 	+= -IDeps/Include/opencv -IDeps/Include/MingwThread
 		LDFLAGS		+= -LDeps/Lib/opencv
 		LDLIBS 		+= -lopencv_highgui300 -lopencv_imgproc300 -lopencv_core300 -lopencv_videoio300
 		CXXFLAGS	+= 
